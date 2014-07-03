@@ -1,6 +1,7 @@
 var Nav = function() {
   this.$window = $(window)
   this.$sections = $('.scroll')
+  this.navOriginalTop = $('.navbar').offset().top
 
   $('[class*=nav-scroll]').each(function(ind, el) {
     var classes =  el.className.split(/\s+/)
@@ -16,6 +17,7 @@ var Nav = function() {
     }
   })
 }
+
 
 Nav.prototype._activeNav = function() {
   var self = this,
@@ -34,10 +36,22 @@ Nav.prototype._activeNav = function() {
   })
 }
 
+
+Nav.prototype._navHeight = function() {
+  var top = window.scrollY
+
+  if (top > this.navOriginalTop)
+    $('.navbar').css('position', 'fixed').css('top', 0)
+  else
+    $('.navbar').css('position', 'absolute').css('top', this.navOriginalTop)
+}
+
+
 Nav.prototype.init = function() {
   var self = this
 
   this.$window.scroll(function(e) {
     self._activeNav()
+    self._navHeight()
   })
 }

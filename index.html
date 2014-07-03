@@ -8,13 +8,12 @@
 
     <link rel="stylesheet" href="components/font-awesome/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="css/app.css">
-    <link rel="components/slick.js/slick/slick.css">
+    <link rel="stylesheet" href="components/slick.js/slick/slick.css">
 
     <script src="components/modernizr/modernizr.js"></script>
     <script src="components/jquery/dist/jquery.min.js"></script>
 
     <script src="js/nav.js"></script>
-    <script src="js/carousel.js"></script>
     <script src="js/app.js"></script>
   </head>
 
@@ -26,7 +25,9 @@
           <li class="nav-item icon"><i class="fa fa-youtube"></i></li>
           <li class="nav-item nav-scroll-about">about</li>
           <li class="nav-item nav-scroll-news">news</li>
-          <li class="nav-item icon logo"><i class="fa fa-lightbulb-o"></i></li>
+          <li class="nav-item icon logo">
+            <i class="fa fa-lightbulb-o"></i>
+          </li>
           <li class="nav-item nav-scroll-clients">clients</li>
           <li class="nav-item nav-scroll-contact">contact</li>
           <li class="nav-item icon"><i class="fa fa-twitter"></i></li>
@@ -38,43 +39,311 @@
     <div class="main">
       <div class="group group-full group-logo">
         <img id="logo" src="img/bg.jpeg">
-        <span id="slogan">where creativity develops</span>
+        <h3 id="slogan">where creativity develops</h3>
       </div>
 
       <div class="group group-full group-about scroll scroll-about">
-        <div class="container">fuck</div>
-      </div>
-
-      <div class="group group-full group-news scroll scroll-news">
-      </div>
-
-      <div class="group group-blog-carousel">
         <div class="container">
-          <ul class="carousel">
-            <li class="carousel-arrow-left"></li>
-
-            <li class="carousel-item">
-              <div class="blog-preview">
-                <img src="img/blog1.png">
-              </div>
-            </li>
-
-            <li class="carousel-item">
-              <div class="blog-preview">
-                <img src="img/blog2.png">
-              </div>
-            </li>
-
-            <li class="carousel-arrow-right"></li>
-          </ul>
+          <div class="row">
+            <div class="col-2">
+              <h2 class="header">about us</h2>
+              <p>Nullam sit amet lacus at ipsum vehicula mollis. Pellentesque ut diam
+                sem. Morbi sit amet vestibulum leo. Duis nec nisi feugiat, mattis justo
+                sit amet, vulputate.
+              </p>
+            </div>
+            <div class="col-3">
+              <h2 class="header">services we offer</h2>
+              <p>Nullam sit amet lacus at ipsum vehicula mollis. Pellentesque ut diam
+                sem. Morbi sit amet vestibulum leo. Duis nec nisi feugiat, mattis justo
+                sit amet, vulputate.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="group group-full group-clients scroll scroll-clients"></div>
+      <div class="group group-news scroll scroll-news">
+        <div class="container">
+          <div class="row">
+            <div class="col-2">
+              <span class="blog-preview-date">17.05.14</span>
+              <h1 class="blog-preview-title">blog title goes in here</h1>
+              <div class="blog-preview-text">
+                <p>Aliquam euismod lectus in nulla egestas, eget placerat nulla
+                  molestie. Aenean viverra blandit nisl, sit amet luctus nisi feugiat
+                  eget. Etiam sed mattis dolor. Donec consectetur dolor et la la mauris
+                  consequat tristique. Donec consectetur dolor et mauris consequat
+                  tristique.
+                </p>
+              </div>
+              <a href="" class="read-more"></a>
+            </div>
+            <div class="col-3">
+              <img class="blog-preview-img" src="img/blog1-large.png">
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <div class="group group-full group-contact scroll scroll-contact"></div>
+      <div class="group group-news scroll scroll-news">
+        <div class="container">
+          <div class="row">
+            <div class="col-3">
+              <img class="blog-preview-img" src="img/blog2-large.png">
+            </div>
+            <div class="col-2">
+              <span class="blog-preview-date">17.05.14</span>
+              <h1 class="blog-preview-title">blog title goes in here</h1>
+              <div class="blog-preview-text">
+                <p>Aliquam euismod lectus in nulla egestas, eget placerat nulla
+                  molestie. Aenean viverra blandit nisl, sit amet luctus nisi feugiat
+                  eget. Etiam sed mattis dolor. Donec consectetur dolor et la la mauris
+                  consequat tristique. Donec consectetur dolor et mauris consequat
+                  tristique.
+                </p>
+              </div>
+              <a href="" class="read-more"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="group group-news scroll scroll-news">
+        <div class="container">
+          <div class="row">
+            <div class="col-2">
+              <span class="blog-preview-date">17.05.14</span>
+              <h1 class="blog-preview-title">blog title goes in here</h1>
+              <div class="blog-preview-text">
+                <p>Aliquam euismod lectus in nulla egestas, eget placerat nulla
+                  molestie. Aenean viverra blandit nisl, sit amet luctus nisi feugiat
+                  eget. Etiam sed mattis dolor. Donec consectetur dolor et la la mauris
+                  consequat tristique. Donec consectetur dolor et mauris consequat
+                  tristique.
+                </p>
+              </div>
+              <a href="" class="read-more"></a>
+            </div>
+            <div class="col-3">
+              <img class="blog-preview-img" src="img/blog1-large.png">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="group group-blog-carousel">
+        <div class="container">
+          <div class="carousel">
+
+            <div class="carousel-item">
+              <div class="blog-preview">
+                <img src="img/blog1.png">
+              </div>
+              <div class="blog-preview-description">
+                <span class="blog-preview-date">17.05.14</span>
+                <h1 class="blog-preview-title">blog title goes in here</h1>
+                <a href="" class="read-more"></a>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="blog-preview">
+                <img src="img/blog2.png">
+              </div>
+              <div class="blog-preview-description">
+                <span class="blog-preview-date">17.05.14</span>
+                <h1 class="blog-preview-title">blog title goes in here</h1>
+                <a href="" class="read-more"></a>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="blog-preview">
+                <img src="img/blog3.png">
+              </div>
+              <div class="blog-preview-description">
+                <span class="blog-preview-date">17.05.14</span>
+                <h1 class="blog-preview-title">blog title goes in here</h1>
+                <a href="" class="read-more"></a>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="blog-preview">
+                <img src="img/blog1.png">
+              </div>
+              <div class="blog-preview-description">
+                <span class="blog-preview-date">17.05.14</span>
+                <h1 class="blog-preview-title">blog title goes in here</h1>
+                <a href="" class="read-more"></a>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="blog-preview">
+                <img src="img/blog2.png">
+              </div>
+              <div class="blog-preview-description">
+                <span class="blog-preview-date">17.05.14</span>
+                <h1 class="blog-preview-title">blog title goes in here</h1>
+                <a href="" class="read-more"></a>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="blog-preview">
+                <img src="img/blog3.png">
+              </div>
+              <div class="blog-preview-description">
+                <span class="blog-preview-date">17.05.14</span>
+                <h1 class="blog-preview-title">blog title goes in here</h1>
+                <a href="" class="read-more"></a>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="blog-preview">
+                <img src="img/blog1.png">
+              </div>
+              <div class="blog-preview-description">
+                <span class="blog-preview-date">17.05.14</span>
+                <h1 class="blog-preview-title">blog title goes in here</h1>
+                <a href="" class="read-more"></a>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="blog-preview">
+                <img src="img/blog2.png">
+              </div>
+              <div class="blog-preview-description">
+                <span class="blog-preview-date">17.05.14</span>
+                <h1 class="blog-preview-title">blog title goes in here</h1>
+                <a href="" class="read-more"></a>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="blog-preview">
+                <img src="img/blog3.png">
+              </div>
+              <div class="blog-preview-description">
+                <span class="blog-preview-date">17.05.14</span>
+                <h1 class="blog-preview-title">blog title goes in here</h1>
+                <a href="" class="read-more"></a>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="blog-preview">
+                <img src="img/blog1.png">
+              </div>
+              <div class="blog-preview-description">
+                <span class="blog-preview-date">17.05.14</span>
+                <h1 class="blog-preview-title">blog title goes in here</h1>
+                <a href="" class="read-more"></a>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="blog-preview">
+                <img src="img/blog2.png">
+              </div>
+              <div class="blog-preview-description">
+                <span class="blog-preview-date">17.05.14</span>
+                <h1 class="blog-preview-title">blog title goes in here</h1>
+                <a href="" class="read-more"></a>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="blog-preview">
+                <img src="img/blog3.png">
+              </div>
+              <div class="blog-preview-description">
+                <span class="blog-preview-date">17.05.14</span>
+                <h1 class="blog-preview-title">blog title goes in here</h1>
+                <a href="" class="read-more"></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="group group-full group-clients scroll scroll-clients">
+        <div class="container">
+          <div class="row">
+            <div class="col-3 offset-1">
+              <div class="header center">
+                <h2>clients</h2>
+                <h3>& collaborators</h3>
+              </div>
+
+              <p>Nullam sit amet lacus at ipsum vehicula mollis. Pellentesque ut diam
+                sem. Morbi sit amet vestibulum leo. Duis nec nisi feugiat, mattis justo
+                sit amet, vulputate.
+              </p>
+              <p>Nullam sit amet lacus at ipsum vehicula
+                mollis. Pellentesque ut diam sem. Morbi sit amet vestibulum leo. Duis
+                nec nisi feugiat, mattis justo sit amet, vulputate. We design with Clean
+                Bandit, make mixes with Pedestrian, manage Toro & Moi, talk music with
+                Justin Martin.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="group group-full group-contact scroll scroll-contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-2">
+              <h2 class="header">contact</h2>
+              <p>+1 (0) 12 3456 7890</p>
+              <p>lublinerj@thedarkroom.com</p>
+              <br />
+              <p>The Darkroom</p>
+              <p>21 Donec Consectetur</p>
+              <p>Tolor, USA</p>
+              <p>SW1 OTR</p>
+            </div>
+            <div class="col-3">
+              <h2 class="header">inquiries</h2>
+              <form class="form">
+                <div class="row">
+                  <div class="col-1">
+                    <label>Email</label>
+                  </div>
+                  <div class="col-4">
+                    <input class="input" type="text" name="email">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-1">
+                    <label>Subject</label>
+                  </div>
+                  <div class="col-4">
+                    <input class="input" type="text" name="subject">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-1">
+                    <label>Message</label>
+                  </div>
+                  <div class="col-4">
+                    <textarea class="input" type="textarea" name="body"></textarea>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
+    
     <script src="components/slick.js/slick/slick.min.js"></script>
   </body>
   
