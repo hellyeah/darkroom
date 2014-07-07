@@ -107,22 +107,6 @@ h3 {
   margin-left: 40%;
 }
 
-@media only screen and (max-width: 767px) {
-  /* .col-2, .col-3, .col-4 { */
-
-  /*     width: 100%; */
-
-  /*     margin-bottom: 1rem; */
-
-  /* } */
-
-  /* .offset-2 { */
-
-  /*     margin-left: 0; */
-
-  /* } */
-}
-
 .navbar {
   position: absolute;
   top: 70px;
@@ -349,4 +333,35 @@ form .input {
   width: 100%;
   border: 0;
   border-bottom: 1px solid #090909;
+}
+
+/* MOBILE */
+
+@media only screen and (max-width: 767px) {
+  .container {
+    margin: 0;
+    padding: 0;
+    padding-top: 2em;
+    width: 100%;
+  }
+
+  .col-2,
+  .col-3,
+  .col-4 {
+    width: 100%;
+    margin: 0 0 2rem 0;
+  }
+
+  [class*='offset-'] {
+    margin-left: 0;
+  }
+
+  .navbar {
+    background-color: white;
+    display: none;
+  }
+
+  .header {
+    margin-bottom: .8em;
+  }
 }
