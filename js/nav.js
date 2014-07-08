@@ -1,14 +1,24 @@
+/**
+ * Navigation bar object for darkroom
+ * @constructor
+ */
 var Nav = function() {
+  // memoization ftw
   this.$window = $(window)
   this.$sections = $('.scroll')
   this.navOriginalTop = $('.navbar').offset().top
 
+  // makes the navigation elements clickable and they scroll down to the appropriate
+  // section. Elements with classes starting with 'nav-scroll-' will be the
+  // navigation elements that are clickable
   $('[class*=nav-scroll]').each(function(ind, el) {
     var classes =  el.className.split(/\s+/)
     for (var i = 0; i < classes.length; i++) {
       if (classes[i].indexOf('nav-scroll-') > -1) {
         $(el).click(function(e) {
           $('html, body').animate({
+            // elements to be scrolled to will have a class name that matches the
+            // latter part of the 'nav-scroll' class on the navigation element
             scrollTop: $(classes[i].replace('nav-', '.')).offset().top
           }, 'slow', 'swing')
         })
@@ -19,6 +29,10 @@ var Nav = function() {
 }
 
 
+/**
+ * Determines which navigation item should be higlighted based on the user's position
+ * on the page. To be bound to scroll event.
+ */
 Nav.prototype._activeNav = function() {
   var self = this,
       top = window.scrollY,
@@ -37,6 +51,10 @@ Nav.prototype._activeNav = function() {
 }
 
 
+/**
+ * Keeps the navigation bar at the top of the page except during splash screen. Bind
+ * to scroll
+ */
 Nav.prototype._navHeight = function() {
   var top = window.scrollY
 
@@ -47,6 +65,9 @@ Nav.prototype._navHeight = function() {
 }
 
 
+/**
+ * Must be called to initialize the Nav instance
+ */
 Nav.prototype.init = function() {
   var self = this
 

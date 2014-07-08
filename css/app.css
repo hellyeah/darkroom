@@ -198,21 +198,11 @@ h3 {
   width: 100%;
 }
 
+/* .carousel-item { */
 
+/*   display: block; */
 
-.blog-preview {
-  /* margin: 0 .5rem; */
-}
-
-/* .blog-preview:first-of-type { */
-
-/*   margin-right: 0; */
-
-/* } */
-
-/* .blog-preview:last-of-type { */
-
-/*   margin-left: 0; */
+/*   margin: 0 auto; */
 
 /* } */
 
@@ -339,10 +329,10 @@ form .input {
 
 @media only screen and (max-width: 767px) {
   .container {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     padding-top: 2em;
-    width: 100%;
+    width: 90%;
   }
 
   .col-2,

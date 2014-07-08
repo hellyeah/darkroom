@@ -1,7 +1,9 @@
+// declaration so nav object is available globally
 var nav
 
 $(document).ready(function() {
   nav = new Nav()
+  // binds the scroll events to check what section the page is on
   nav.init()
 
   $('.carousel').slick({
@@ -11,14 +13,14 @@ $(document).ready(function() {
     autoplaySpeed: 5000,
     responsive: [
       {
-        breakpoint: 1230,
+        breakpoint: 1423,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3
         }
       },
       {
-        breakpoint: 900,
+        breakpoint: 1065,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1
@@ -32,5 +34,5 @@ $(document).ready(function() {
         }
       }
     ]
-  });
+  })
 })
